@@ -34,7 +34,7 @@ struct FrameworkDetailView: View {
                 FrameworkButton(title: "Learn More")
             }
             .sheet(isPresented: $isShowingSafariView, content: {
-                SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+                SafariView(url: URL(string: framework.urlString) ?? URL(string: "https://developer.apple.com/")!)
             })
         }
     }
